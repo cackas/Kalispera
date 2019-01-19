@@ -12,7 +12,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
   display: block
 html
-  font-size: 10px
+  font-size: .83vw
+  font-family: 'SegoeUIRegular'
 body
   line-height: 1
 
@@ -37,6 +38,135 @@ table
   border-spacing: 0   
 a, a:hover, a:active
   text-decoration: none
-  color: #000 
-
+  color: #3E3E40
+//page
+.container
+  padding: 0 7.1vw
+.uppercase
+  text-transform: uppercase
+.img--full
+  width: 100%
+.flex
+  display: flex
+.flex--row
+  flex-direction: row
+.flex--column
+  flex-direction: column
+.nav__wrap
+  background-color: rgba(#000,.5)
+.nav
+  justify-content: space-between
+  align-items: center
+  font-size: 
+  a, a:hover, a:active
+    color: #fff
+.logo
+  width: 5.8vw
+  display: block
+.nav__menu
+  align-items: center
+  &>li
+    margin-right: 1.77vw
+    line-height: 1vw
+    position: relative
+    padding: 2.4vw 0
+    &:hover .submenu
+      display: inherit
+    &:last-child
+      margin-right: 0
+.home
+  justify-content: space-around
+  align-items: flex-start
+  padding: 33.1vw 0 8.75vw
+.home__descr
+  font-size: 2.6vw
+  line-height: 3.4vw
+  text-align: center
+  color: #fff
+  span
+    color: #F29544
+.home__form
+  align-items: flex-end
+.form__input
+  width: 18vw
+  font-size: .93vw
+  line-height: 1.25vw
+  padding: 1vw 0
+  text-align: center
+  color: #fff
+  background-color: rgba(#000,.35)
+  border: none
+  margin-right: 1.1vw
+  &:last-child
+    margin-right: 0
+.form__sbm
+  font-size: .93vw
+  line-height: 1.25vw
+  padding: 1vw 2vw
+  text-align: center
+  color: rgba(#fff,.35)
+  background-color: rgba(#000,.35)
+  border: none
+  border-radius: 1.5vw
+.input__wrap
+  margin-bottom: 1.3vw
+.submenu
+  display: none
+  transition: .3 all
+  font-family: 'SegoeUILight'
+  position: absolute
+  top: 100%
+  left: 0
+  background-color: rgba(#fff,.2)
+  padding: 1vw 0 1.2vw
+  width: 13vw
+  border-radius: .15vw
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    border-right: .46vw solid rgba(#fff,.2)
+    border-left: .46vw solid rgba(#fff,0)
+    border-top: .46vw solid rgba(#fff,0)
+    border-bottom: .46vw solid rgba(#fff,0)
+    transform: rotate(90deg) translate(-100%,-50%)
+  li
+    a
+      display: block
+      padding: .4vw 1.6vw
+      line-height: 1.2vw
+      &:hover
+        background-color: rgba(#F29544,.2)
+    &:last-child
+      margin-bottom: 0
+.footer__top
+  padding: 5.4vw 0
+  background-image: url(../images/bg-footer.jpg)
+  background-size: 100% 100%
+  background-color: rgba(#000,.52)
+.footer__bottom
+  padding: 3.8vw 0
+.columns
+  justify-content: space-around
+  line-height: 1.97vw
+.column:nth-child(4)
+  line-height: 1.25vw
+  li
+    margin-bottom: .36vw
+    &:last-child
+      margin-bottom: 0
+.footer__logo
+  width: 7.2vw
+  display: block
+  margin-bottom: .92vw
+.social
+  li
+    margin-right: .6vw
+    &:last-child
+      margin-right: 0
+  a
+    display: block
+    width: 1vw
+    height: 1vw
 @import "media"
