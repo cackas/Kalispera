@@ -42,6 +42,17 @@ a, a:hover, a:active
 //page
 .container
   padding: 0 7.1vw
+.margin-bottom
+  margin-bottom: 8.8vw
+.text
+  font-size: .93vw
+  line-height: 1.25vw
+.text-block
+  text-align: center
+.text-block__title
+  font-size: 1.56vw
+  margin-bottom: 2.6vw
+  color: #F29544
 .uppercase
   text-transform: uppercase
 .img--full
@@ -169,4 +180,106 @@ a, a:hover, a:active
     display: block
     width: 1vw
     height: 1vw
+.services
+  justify-content: space-between
+  transform: translate(0,-.73vw)
+.service img
+  width: 10.8vw
+.service__text
+  text-align: center
+  font-size: 1.2vw
+  line-height: 1.35vw
+  padding: 1.3vw 0
+  box-shadow: 0px 0px .5vw .156vw rgba(50, 50, 50, 0.16)
+.countries
+  flex-wrap: wrap
+  justify-content: space-between
+.country
+  flex-direction: column
+  width: 16.4vw
+  .country__content
+    box-shadow: 0 .15vw .3vw rgba(0,0,0,0.16)
+  &:nth-child(2n)
+    flex-direction: column-reverse
+    .country__content
+      box-shadow: none
+    .img
+      box-shadow: 0 .15vw .3vw rgba(0,0,0,0.16)
+.country__content
+  padding: .26vw .88vw .88vw
+.country__title
+  font-size: 1.56vw
+  line-height: 2vw
+  margin-bottom: .33vw
+  color: #04B2D9
+.country__text
+  font-size: .83vw
+  line-height: 1vw
+  color: #3E3E40
+  margin-bottom: .75vw
+.country__price
+  font-size: .83vw
+  line-height: 1vw
+  color: #F29544
+.info
+  flex-direction: column
+  justify-content: center
+.info__title
+  color: #F29544
+  font-size: 1.3vw
+  line-height: 1.7vw
+  margin-bottom: 1.4vw
+.info__text
+  font-size: .83vw
+  line-height: 1vw
+  margin-bottom: 1vw
+  color: #3E3E40
+.info__btn
+  width: fit-content
+  align-self: center
+  color: #E4F0F2
+  font-size: .73vw
+  line-height: 1vw
+  padding: .57vw 1.25vw
+  background-color: #04B2D9
+  border-radius: 1vw
+  &:hover, &:active
+    color: #E4F0F2
+.calendar
+  height: 48.3vw
+  background-image: url(../images/China_geography.png)
+  background-size: 100% 100%
+  justify-content: center
+  align-items: center
+.calendar__wrap
+  width: 58.3vw
+  padding: 5.2vw 8vw
+  text-align: center
+  justify-content: center
+  background-image: url(../images/bg-calendar.png)
+  background-size: 100% 100%
+  align-items: center
+.calendar__title
+  font-size: 2.6vw
+  line-height: 3.4vw
+  color: #fff
+  margin-bottom: 3.125vw
+  span
+    color: #F29544
+.calendar__text
+  color: #E4F0F2
+  margin-bottom: 2vw
+  font-size: .83vw
+  line-height: 1vw
+.calendar__btn
+  width: fit-content
+  align-self: center
+  color: #E4F0F2
+  font-size: .73vw
+  line-height: 1vw
+  padding: .57vw 1.25vw
+  background-color: #F29544
+  border-radius: 1vw
+  &:hover, &:active
+    color: #E4F0F2
 @import "media"
