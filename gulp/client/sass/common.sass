@@ -44,14 +44,20 @@ a, a:hover, a:active
   padding: 0 7.1vw
 .margin-bottom
   margin-bottom: 8.8vw
+.margin-bottom--el
+  margin-bottom: 5.3vw
 .text
   font-size: .93vw
   line-height: 1.25vw
+.realtive
+  position: relative
 .text-block
   text-align: center
 .text-block__title
   font-size: 1.56vw
   margin-bottom: 2.6vw
+  text-align: center
+  font-family: 'GotthardRegular'
   color: #F29544
 .uppercase
   text-transform: uppercase
@@ -194,6 +200,10 @@ a, a:hover, a:active
 .countries
   flex-wrap: wrap
   justify-content: space-between
+.country--slide
+  flex-direction: column
+.loan .country
+  margin: 0 .5vw 5vw
 .country
   flex-direction: column
   width: 16.4vw
@@ -205,6 +215,12 @@ a, a:hover, a:active
       box-shadow: none
     .img
       box-shadow: 0 .15vw .3vw rgba(0,0,0,0.16)
+    .country--slide
+      flex-direction: column-reverse
+      .country__content
+        box-shadow: none
+      .img
+        box-shadow: 0 .15vw .3vw rgba(0,0,0,0.16)
 .country__content
   padding: .26vw .88vw .88vw
 .country__title
@@ -229,6 +245,7 @@ a, a:hover, a:active
   font-size: 1.3vw
   line-height: 1.7vw
   margin-bottom: 1.4vw
+  font-family: 'GotthardRegular'
 .info__text
   font-size: .83vw
   line-height: 1vw
@@ -282,4 +299,95 @@ a, a:hover, a:active
   border-radius: 1vw
   &:hover, &:active
     color: #E4F0F2
+.education__wrap
+  position: relative
+.education__slider
+  width: 63.8vw
+.education__info
+  position: absolute
+  text-align: center
+  top: 3.9vw
+  right: 0
+  width: 27.9vw
+  background-color: #04B2D9
+  color: #fff
+.education__realtive
+  align-items: center
+  padding: 6.25vw 1.7vw 1.7vw
+.education__text
+  margin-bottom: 2.5vw
+  font-size: 1vw
+  line-height: 1.4vw
+.home-slider__arrows
+  position: absolute
+  top: 0
+  right: 100%
+.arrow
+  width: 4.2vw
+  height: 4.2vw
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  img
+    width: .625vw
+.top-arrow
+  background-color: rgba(#04B2D9, .6)
+.bott-arrow
+  background-color: rgba(#E4F0F2, .6)
+.loan__slider
+  .slick-slide
+    height: inherit
+    &>div
+      display: flex
+.loan
+  .slick-dots li button:before
+    content: ""
+    width: 1.1vw
+    height: .4vw
+    border-radius: .2vw
+    border: 1px solid #04B2D9
+  .slick-dots li.slick-active button:before
+    background-color: #04B2D9
+.page
+  padding: 6vw 0 5vw
+.page__title
+  font-size: 2.6vw
+.page__title--more
+  text-align: center
+  color: #04B2D9
+  font-family: 'SegoeUILight'
+  font-size: 1.56vw
+  line-height: 2vw
+  margin-bottom: 2.9vw
+.img--page
+  margin-bottom: 1.25vw
+.img-title
+  text-align: center
+  color: #04B2D9
+  font-family: 'SegoeUILight'
+  font-size: .83vw
+  line-height: 1vw
+  margin-bottom: 3.9vw
+.double
+  justify-content: space-between
+.part
+  width: 49.5%
+.part--text
+  padding: 2.3vw
+.page__form
+  justify-content: center
+  .form__input, .form__sbm
+    background-color: #04B2D9
+::-webkit-input-placeholder
+  color: rgba(#fff, .5)
+::-ms-input-placeholder
+  color: rgba(#fff, .5)
+::-moz-input-placeholder
+  color: rgba(#fff, .5)
+::-moz-input-placeholder
+  color: rgba(#fff, .5)
+.countries--page
+  .country
+    width: 20vw
+    margin-bottom: 3vw
 @import "media"
