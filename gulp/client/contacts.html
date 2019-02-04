@@ -46,6 +46,7 @@
                                 <li><a href="#">Португалия</a></li>
                             </ul>
                         </li>
+                        <li><a href="#">Страны</a></li>
                         <li><a href="#">Туристический календарь</a></li>
                         <li><a href="#">Обучение</a></li>
                         <li><a href="#">Отдых в рассрочку</a></li>
@@ -54,7 +55,6 @@
                         <li><a href="#">+375(29)777-55-33</a><br><a href="#">+375(29)777-55-33</a></li>
                         <li><a href="#">ул.Название улицы<br>д.1, оф.230</a></li>
                     </ul>
-                    <button class="cmn-toggle-switch cmn-toggle-switch__htx"><span>toggle menu</span></button>
                 </div>
             </div>
         </div>
@@ -86,30 +86,45 @@
             <li><a href="#">Португалия</a></li>
         </ul>
         <div class="container">
-            <div class="page__title text-block__title uppercase">ШАРМ-ЭЛЬ ШЕЙХ</div>
-            <div class="page__title--more"><a href="#">Вьетнам тур 1</a><a href="#">Вьетнам тур 2</a><a href="#">Вьетнам тур 3</a><a href="#">Вьетнам тур 4</a></div>
-            <img src="images/slide-home.jpg" alt="" class="img--full img--page">
-            <div class="img-title container">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
-            <div class="text-block__title uppercase">LOREM IPSUM</div>
-            <div class="double flex flex--row">
-                <div class="part"><img src="images/page-1.jpg" alt="" class="img--full"></div>
-                <div class="part part--text"><div class="info__title">Lorem Ipsum</div><div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, provident. Et esse aperiam eius! Fugit officia distinctio id! Magnam voluptatem animi labore voluptas earum ducimus quisquam quia debitis error accusantium.</div><br><div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quia modi delectus tempora beatae ex vero. Obcaecati voluptatibus non corrupti voluptate nam exercitationem laudantium at expedita animi labore iusto quis, dicta qui minima nemo nesciunt. Sunt necessitatibus assumenda excepturi ex.</div></div>
+            <div class="page__title text-block__title uppercase">КОНТАКТЫ</div>
+            <div class="text container margin-bottom--el">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum tempore quisquam voluptatem quidem. Eius sapiente dolorum deserunt vitae soluta quisquam facilis similique, iste laboriosam, totam earum? Officia, ab. Nobis itaque facilis placeat sapiente sequi alias eveniet earum, error vel hic eius quod rerum accusantium aut quia, nihil possimus nesciunt consequuntur.</div>
+            <div class="double double--contacts flex flex--row margin-bottom--el">
+                <div class="part left">
+                    <div class="contacts flex flex--row">
+                        <div class="contact">
+                            <p class="contacts__text">г. Минск<br>ул. Название улицы<br>д. 1 оф. 320</p>
+                        </div>
+                        <div class="contact">
+                            <a href="#">mail@mail.com</a><br>
+                            <a href="#">+375 (29) 749-17-14</a>
+                        </div>
+                        <div class="contact">
+                            <p class="contacts__text">г. Минск<br>ул. Название улицы<br>д. 1 оф. 320</p>
+                        </div>
+                        <div class="contact">
+                            <a href="#">mail@mail.com</a><br>
+                            <a href="#">+375 (29) 749-17-14</a>
+                        </div>
+                    </div>
+                    <div id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.9109949744793!2d27.60428469683192!3d53.90095969385842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbce4c1dfc0b79%3A0x5ec8d6ef69bfd9a5!2z0L_QtdGA0LXRg9C70L7QuiDQo9GA0LDQu9GM0YHQutC40LkgMTUsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1536579187217" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="part right">
+                    <form class="contacts__form flex flex--column">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Kalispera Project">
+                        <input type="hidden" name="admin_email" value="vannigga@yandex.ru">
+                        <input type="hidden" name="form_subject" value="Новый запрос">
+                        <!-- END Hidden Required Fields -->
+                        <input class="contacts__input" type="text" name="name" placeholder="Ваше имя" required pattern="[A-Za-zА-Яа-яЁё]{1,}">
+                        <input class="contacts__input" type="text" name="email" placeholder="E-mail" required pattern="\S+@[a-z]+\.[a-z]+">
+                        <input class="contacts__input" type="text" name="subject" placeholder="Тема" required pattern="[A-Za-zА-Яа-яЁё]{1,}">
+                        <textarea class="contacts__input" rows="4" name="quest" placeholder="Сообщение"></textarea>
+                        <input class="contacts__sbm" type="submit" value="Отправить">
+                    </form>
+                </div>
             </div>
-            <div class="double flex flex--row margin-bottom--el">
-                <div class="part part--text"><div class="info__title">Lorem Ipsum</div><div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, provident. Et esse aperiam eius! Fugit officia distinctio id! Magnam voluptatem animi labore voluptas earum ducimus quisquam quia debitis error accusantium.</div><br><div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quia modi delectus tempora beatae ex vero. Obcaecati voluptatibus non corrupti voluptate nam exercitationem laudantium at expedita animi labore iusto quis, dicta qui minima nemo nesciunt. Sunt necessitatibus assumenda excepturi ex.</div></div>
-                <div class="part"><img src="images/page-2.jpg" alt="" class="img--full"></div>
-            </div>
-            <div class="text container margin-bottom--el">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellat consequuntur corrupti debitis, reiciendis hic doloremque consectetur nesciunt, consequatur obcaecati blanditiis nostrum. Reprehenderit omnis nostrum dicta in consequatur molestias blanditiis architecto. Distinctio tempora reiciendis nam porro et animi debitis hic magnam doloribus ratione? Blanditiis minus, cupiditate quasi aspernatur dolorem voluptates!</div>
-            <form class="page__form home__form flex flex--row margin-bottom--el">
-                <!-- Hidden Required Fields -->
-                <input type="hidden" name="project_name" value="Kalispera Project">
-                <input type="hidden" name="admin_email" value="vannigga@yandex.ru">
-                <input type="hidden" name="form_subject" value="Новый запрос">
-                <!-- END Hidden Required Fields -->
-                <input class="form__input" type="text" name="name" placeholder="Ваше имя" required pattern="[A-Za-zА-Яа-яЁё]{1,}">
-                <input class="form__input form__width" type="tel" name="tel" placeholder="Телефон" required pattern="+[0-9]{1,}">
-                <input class="form__sbm" type="submit" value="Заказать тур">
-            </form>
             <hr class="margin-bottom--el">
             <div class="countries flex flex--row">
                 <a href="#" class="country flex">

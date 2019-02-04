@@ -29,6 +29,42 @@ $(document).ready(function() {
         slidesPerRow: 4,
         infinite: false,
         dots: true,
-        arrows: false
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 769,
+            settings: {
+              rows: 2,
+              slidesPerRow: 2
+            }
+          }]
     });
+    //Кнопка адаптивного меню
+    var toggles = document.querySelectorAll(".cmn-toggle-switch");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
+    });
+    }
+    $('.cmn-toggle-switch').on('click', function() {
+      $('.nav__menu').fadeToggle();
+    });
+    $('.countries-btn').on('click', function() {
+        $('.countries-submenu').fadeToggle();
+    });
+    $(document).mouseup(function (e)
+        {
+            var container = $(".countries-submenu");
+
+            if (!container.is(e.target) && container.has(e.target).length === 0 && container.css('display')=='block') {
+                $('.countries-submenu').fadeToggle();
+            }
+        });
 })
