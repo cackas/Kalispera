@@ -1,5 +1,5 @@
 <h1>Project "Kalispera"</h1>
-<p><strong>You can find more here: </strong><a href="https://sav-phi.vercel.app/">https://sav-phi.vercel.app/</a></p>
+<p><strong>You can find more here: </strong><a href="https://kalispera.vercel.app/">https://sav-phi.vercel.app/</a></p>
 
 <p>
 	<img src="https://raw.githubusercontent.com/cackas/Kalispera/4b8ee7e5f63c67d9509c27714751fee8382fd81f/assets/kal1.png" alt="KalisperaProject">
